@@ -1,0 +1,98 @@
+
+.history {
+    min-height: 100vh;
+    padding: 30px;
+    background: #f4eeee;
+}
+
+.historyHeader {
+    margin-bottom: 25px;
+}
+
+.historyHeader h2 {
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.historyHeader p {
+    color: #555;
+}
+
+.historyCount {
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+.historyCardBlock {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 22px;
+}
+
+.historyCard {
+    background: #fff;
+    border-radius: 12px;
+    padding: 22px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    overflow-wrap: anywhere;
+}
+
+.historyCardHeader {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+}
+
+.historyCardTitle {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.historyCardDate {
+    font-size: 13px;
+    color: #666;
+}
+
+.historyCardContent {
+    padding-top: 15px;
+}
+
+.historyCardScore {
+    font-size: 38px;
+    font-weight: 700;
+    color: #a64f4f;
+    margin-bottom: 15px;
+}
+
+.historyCardFeedback {
+    line-height: 1.6;
+    color: #333;
+}
+
+.historyCardFeedback p {
+    margin-top: 12px;
+    overflow-wrap: anywhere;
+}
+
+.emptyHistory {
+    padding: 35px;
+    text-align: center;
+    background: white;
+    border-radius: 12px;
+}
+
+@media (max-width: 600px) {
+    .history {
+        padding: 16px;
+    }
+
+    .historyHeader h2 {
+        font-size: 24px;
+    }
+
+    .historyCardBlock {
+        grid-template-columns: 1fr;
+    }
+}
