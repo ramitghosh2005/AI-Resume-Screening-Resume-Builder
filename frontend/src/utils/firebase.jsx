@@ -3,7 +3,7 @@ import { initializeApp } from "firebase/app";
 import {getAuth, GoogleAuthProvider} from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCyTVmuLinrBYRJ_hv76nxgtb2mRLM2bWg",
+  apiKey:import.meta.env.FIREBASE_API_KEY,
   authDomain: "mernai-d66ac.firebaseapp.com",
   projectId: "mernai-d66ac",
   storageBucket: "mernai-d66ac.firebasestorage.app",
